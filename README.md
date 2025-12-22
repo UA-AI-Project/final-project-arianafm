@@ -48,25 +48,7 @@ Make sure the selected kernel uses the Python interpreter from the virtual envir
 
 ## Project structure
 
-The project is organized as follows:
+The project consists of several Jupyter notebooks for data preparation, modeling, and evaluation, together with a small src module containing evaluation metrics provided by the course instructors. Dependencies and usage instructions are documented in the requirements.txt file and the README.md.
 
-final-project-arianafm/   
-├── data/   
-│   ├── raw/            Original input data   
-│   └── cleansed/       Cleaned and processed data   
-│   
-├── notebooks/          Jupyter notebooks for data preparation,   
-│                       modeling, and evaluation   
-│   
-├── src/   
-│   └── metrics.py      Helper functions for evaluation, provided by the course instructors   
-│   
-├── requirements.txt    List of required Python libraries   
-├── README.md           Project description and instructions   
-└── .gitignore          Git ignore rules   
-
-The raw data folder contains the original files.   
-The cleansed folder contains the processed versions used in the experiments.    
-   
-Note: The `data` folder was not submitted; its structure is included in the README for informational purposes only, to indicate how it should be organized.
+Two notebooks are dedicated to data preparation, mainly focusing on data cleaning (`data_prep.ipynb` and `data_prep_2.ipynb`). The hybrid recommendation approaches are implemented in the `A-B-C-D.ipynb` notebook, while reranking is handled separately in the `A-B-E.ipynb` notebook, as this step is more computationally expensive. The data is organized into raw and cleansed versions, but the data directory itself is not included in the submission.
 
